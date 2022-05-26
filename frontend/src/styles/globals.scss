@@ -1,0 +1,163 @@
+// Custom boootstrap css
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1324px
+);
+@import '~bootstrap/scss/bootstrap';
+@import '~swiper/swiper.scss';
+@import '~swiper/components/navigation/navigation.scss';
+@import '~swiper/components/pagination/pagination.scss';
+@import './header.scss';
+@import './footer.scss';
+@import './scrollToTop.scss';
+@import './Login.module.scss';
+@import './Account.module.scss';
+@import './ProductGrid.module.scss';
+@import './CategorySideBar.module.scss';
+@import './ProductCarousel.module.scss';
+@import './ProductCard.module.scss';
+@import './Pagination.module.scss';
+@import './ProductDetail.module.scss';
+@import './BannerCarousel.module.scss';
+@import './home.scss';
+@import './BlogCard.module.scss';
+@import './BlogGrid.module.scss';
+@import './BlogDetail.module.scss';
+@import './BlogRelated.module.scss';
+@import './BlogCarousel.module.scss';
+@import './Breadcrumb.module.scss';
+@import './Cart.module.scss';
+
+* {
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-primary: rgba(7, 7, 7, 0.5);
+  --color-border-bottom: #efeff4;
+  --color-background-footer_1: #efeff4;
+  --color-background-button: #410e63;
+  --color-background-main: #410e63;
+  --color-background-button-hover: #6200a3;
+  --color-border-input: #c8c7cc;
+  --color-border-product: #ddd;
+  --color-icon: white;
+
+  --color-facebook: #4267b2;
+  --color-instagram: #ed3e1f;
+  --color-youtube: #c9170a;
+  --color-twitter: #55acee;
+  --color-in: #0077b5;
+
+  --color-tag-onlyStore: #f66d52;
+  --color-tag-sale: white;
+  --color-h2: #2a2a2a;
+  --color-background-cate: #410e63;
+  --color-a: #606060;
+  --color-child-active: #f6f6f6;
+  --color-hover: #85177b;
+  --color-text-white: white;
+  --color-text-black: black;
+
+  --color-error: #dc3545;
+  --color-success: #28a745;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+}
+
+/* Buttons */
+::-webkit-scrollbar-button:single-button {
+  display: block;
+  border-style: solid;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-background-button);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-background-button-hover);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--color-hover);
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+button:focus,
+input:focus-visible,
+button:focus-visible,
+select:focus-visible {
+  outline: none;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.form-check-input,
+.form-check-input[type='checkbox'] {
+  border-radius: 0;
+}
+
+.sliderCard {
+  margin: 50px 0 80px;
+}
+.bannerHeader .row {
+  margin: 10px 0;
+}
+.pageLand-res--display {
+  transition: ease-in-out 0.5s;
+}
+
+.pageLand-res--hide {
+  transform: translateX(-300px);
+  transition: ease-in-out 0.5s;
+}
+
+.sliderCard {
+  margin: 50px 0 80px;
+}
+
+.pageLand-res--display {
+  transition: ease-in-out 0.5s;
+}
+
+.pageLand-res--hide {
+  transform: translateX(-300px);
+  transition: ease-in-out 0.5s;
+}
+
+.fb_customer_chat_icon{
+  transform: translateY(-50px) !important;
+  margin: 0px 5px !important;
+  animation: 3s ease-out 0s 1 normal none running slideInFromBottom !important;
+}
+
+.fb_customer_chat_bounce_in_v2{
+  transform: translateY(-50px) !important;
+  margin-right: 5px !important;
+}

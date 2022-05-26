@@ -1,0 +1,24 @@
+.blog-detail {
+  margin-top: 20px;
+  &__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px solid var(--color-border-bottom);
+    padding-bottom: 25px;
+  }
+  &__created-at {
+    font-size: 15px;
+    font-weight: 550;
+    border-bottom: 1px solid var(--color-border-bottom);
+    padding: 15px 0;
+  }
+  &__content {
+    margin-top: 15px;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

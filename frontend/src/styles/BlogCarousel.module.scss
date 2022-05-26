@@ -1,0 +1,40 @@
+.blog-carousel {
+  margin-bottom: 50px;
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 30px 0;
+  }
+
+  .swiper-slide {
+    animation: fadeUp 1s;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: white !important;
+    background-color: var(--color-background-main);
+    padding: 0px 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 12px !important;
+    font-weight: 800;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

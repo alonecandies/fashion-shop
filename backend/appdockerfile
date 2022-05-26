@@ -1,0 +1,16 @@
+FROM node:14
+
+WORKDIR /app
+
+COPY package.json .
+
+RUN npm i
+# RUN npm i -g pm2
+
+COPY . .
+
+EXPOSE 7000
+
+# VOLUME [ "/node_modules" ]
+
+CMD ["npm", "run", "dev"]

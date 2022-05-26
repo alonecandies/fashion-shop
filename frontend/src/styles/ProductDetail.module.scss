@@ -1,0 +1,186 @@
+.singleProduct {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  .detail {
+    // padding-top: 140px;
+    justify-content: space-between;
+    .imageCurrentProduct {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      .list-img {
+        white-space: nowrap;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        ul {
+          list-style-type: none;
+          display: flex;
+          padding-left: 0;
+          margin-bottom: 0;
+          li {
+            margin: 5px 5px 5px 0;
+            height: 170px;
+            width: auto;
+            scroll-snap-align: start;
+            img {
+              width: auto;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    .content {
+      margin-left: 100px;
+      h2 {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 30px;
+      }
+      .cost {
+        font-size: 23px;
+        font-weight: 700;
+        color: var(--color-hover);
+        line-height: 50px;
+      }
+      p {
+        font-size: 15px;
+        font-weight: 400;
+        color: #555;
+        line-height: 28px;
+        padding: 10px 0;
+        margin: 10px 0;
+      }
+      span {
+        a {
+          color: var(--color-primary);
+          font-weight: 500;
+        }
+      }
+      ul {
+        padding: 0;
+        font-size: 13px;
+        display: flex;
+      }
+      input[type='radio'] {
+        display: none;
+      }
+      .size {
+        .option {
+          border: 1px solid var(--color-border-product);
+          background-color: var(--color-text);
+          margin: 0 5px 0 0;
+          padding: 5px 15px;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+        input:checked + label > .optionSize,
+        .optionSize:hover {
+          background-color: var(--color-hover);
+          color: var(--color-text-white);
+        }
+        .btn {
+          &:focus {
+            background-color: var(--color-hover);
+            color: var(--color-text);
+            border: var(--color-hover);
+          }
+        }
+      }
+      .color {
+        .optionColor {
+          border-radius: 50%;
+          padding: 20px;
+          margin-right: 10px;
+          border: 1px solid var(--color-border-product);
+          cursor: pointer;
+        }
+        .optionColor:hover,
+        input:checked + label > .optionColor {
+          box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+        }
+      }
+      .add {
+        margin: 25px 0;
+        display: flex;
+        button {
+          width: 200px;
+          height: 50px;
+          border: none;
+          border-radius: 25px;
+          background-color: var(--color-background-main);
+          color: var(--color-text-white);
+          font-weight: 500;
+        }
+        .icon {
+          .heart {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--color-border-bottom);
+            text-align: center;
+            margin-left: 20px;
+            box-shadow: -14.142px 14.142px 20px 0 rgba(0, 0, 0, 0.1);
+            color: var(--color-background-main);
+          }
+          &:hover {
+            .heart {
+              background-color: var(--color-background-main);
+              color: white;
+            }
+          }
+        }
+      }
+      .contact {
+        ul {
+          list-style-type: none;
+          display: flex;
+          padding-left: 0;
+          li {
+            margin: 15px;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            text-align: center;
+            a {
+              color: white;
+              i {
+                line-height: 50px;
+              }
+            }
+          }
+          .fb {
+            background-color: var(--color-facebook);
+          }
+          .twitter {
+            background-color: var(--color-twitter);
+          }
+          .in {
+            background-color: var(--color-in);
+          }
+        }
+      }
+    }
+    .description {
+      padding: 20px 0;
+      border-top: 1px solid var(--color-border-product);
+      border-bottom: 1px solid var(--color-border-product);
+    }
+  }
+}
+.detail .content .size,
+.detail .content .color {
+  margin: 20px 0;
+  border-bottom: 1px solid var(--color-border-product);
+}
+@media screen and (max-width: map-get($grid-breakpoints, 'lg')) {
+  .detail .content {
+    margin: 20px 0;
+  }
+}

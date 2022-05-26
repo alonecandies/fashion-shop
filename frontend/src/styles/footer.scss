@@ -1,0 +1,137 @@
+.footer {
+  .logup {
+    h1 {
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h6 {
+      line-height: 1.5em;
+      margin-top: 10px;
+    }
+
+    .logup-wrapper {
+      background-color: var(--color-background-footer_1);
+      padding: 50px 0;
+
+      .input {
+        animation: fadeDown 1.5s 0.2s;
+
+        label {
+          margin-top: 20px;
+        }
+
+        input,
+        textarea {
+          padding: 10px;
+          border: 1px solid var(--color-border-input);
+          resize: none;
+        }
+
+        button {
+          background-color: var(--color-background-button);
+          color: white;
+          border: none;
+          padding: 10px 40px;
+          text-transform: uppercase;
+        }
+
+        .successText {
+          color: var(--color-success);
+        }
+      }
+    }
+  }
+
+  /* infor */
+  .infor {
+    background-color: var(--color-background-button);
+    color: var(--color-icon);
+    padding: 50px 30px;
+
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    li,
+    p {
+      margin: 5px 0;
+      line-height: 1.5rem;
+    }
+
+    a {
+      color: var(--color-icon);
+      text-decoration: none;
+    }
+
+    h1,
+    h6 {
+      animation: fadeLeft 1.5s 0.2s;
+    }
+
+    .infor-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .infor-item {
+        margin: 20px 0;
+        animation: fadeLeft 1.5s 0.2s;
+      }
+
+      .icon {
+        animation: fadeLeft 1.5s 0.2s;
+      }
+    }
+  }
+
+  .copyright {
+    padding: 10px 0px;
+
+    a,
+    a:hover {
+      color: rgba($color: #000000, $alpha: 0.95);
+      font-weight: 600;
+    }
+  }
+
+  @keyframes fadeLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeDown {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.facebook {
+  background-color: var(--color-facebook);
+}
+
+.instagram {
+  background-color: var(--color-instagram);
+}
+
+.youtube {
+  background-color: var(--color-youtube);
+}

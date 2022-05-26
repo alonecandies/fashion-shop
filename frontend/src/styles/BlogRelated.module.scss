@@ -1,0 +1,12 @@
+.blog-related {
+  &__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .blogcard {
+    width: 100%;
+  }
+}

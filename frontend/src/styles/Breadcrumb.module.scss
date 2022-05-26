@@ -1,0 +1,12 @@
+.breadcrumb {
+  padding-top: 15px;
+
+  a:hover {
+    color: var(--color-hover);
+  }
+
+  .breadcrumb-title {
+    padding: 0px 10px;
+    color: var(--color-text-black);
+  }
+}

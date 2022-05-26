@@ -1,0 +1,8 @@
+.blog {
+  &__title {
+    text-transform: uppercase;
+    font-weight: 650;
+    text-align: center;
+    color: var(--color-hover);
+  }
+}

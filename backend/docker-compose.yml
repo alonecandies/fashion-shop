@@ -1,0 +1,66 @@
+version: "3"
+
+networks:
+  example-net:
+    external: true
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: appdockerfile
+    env_file: ./.env
+    container_name: nodejsserver
+    ports:
+      - "$APP_PORT:$DOCKER_APP_PORT"
+    volumes:
+      - .:/app
+      - "/app/node_modules"
+    depends_on:
+      - mysql_server
+    environment: 
+      MYSQL_HOST: mysql_server
+    networks:
+      - example-net
+    
+  nginx:
+    build:
+      context: .
+      dockerfile: nginxdockerfile
+    container_name: nginx
+    hostname: nginx
+    ports:
+        - "80:80" 
+    depends_on:
+        - app
+    networks:
+        - example-net
+
+  mysql_server:
+    build:
+      context: .
+      dockerfile: mysqldockerfile
+    env_file: ./.env
+    environment: 
+        MYSQL_ROOT_PASSWORD: $DB_ADMIN_PASSWORD
+        MYSQL_DATABASE: $DB_NAME
+    # ports:
+    #     - $DB_PORT:$MYSQL_DOCKER_PORT
+    volumes:
+        - mysql:/var/lib/mysql
+        - mysql_config:/etc/mysql
+    networks:
+      - example-net
+
+volumes:
+  mysql:
+  mysql_config:
+
+
+# send create data: docker exec -i 560092 mysql -uroot -ppassword mysql < scripts/relase-1/create_new_db.sql
+# sudo docker-compose --env-file ./lasy_shop/.env  build -d
+# sudo docker network create example-net : create new network
+
+# sudo docker-compose logs : view logs
+
+# sudo docker-compose up -d --no-deps --build <service_name> : rebuild

@@ -1,0 +1,67 @@
+.product {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: none;
+    h2 {
+      font-size: 28px;
+      font-weight: 650;
+      align-self: center;
+    }
+    .selections {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 0;
+      .has_child_item {
+        list-style-type: none;
+        margin: 0 10px;
+        position: relative;
+        width: 180px;
+      }
+      .dropdown_menu {
+        margin: 10px;
+      }
+      .grid {
+        .change_grid {
+          padding: 10px;
+          border: none;
+          background-color: white;
+          &:active {
+            outline: 1px var(--color-hover);
+          }
+        }
+      }
+    }
+  }
+  .show {
+    margin: 20px 0;
+  }
+}
+.dropdown_item {
+  &:active {
+    background-color: var(--color-child-active) !important;
+    color: black !important;
+  }
+}
+@media (min-width: map-get($grid-breakpoints, 'xs')) and (max-width: map-get($grid-breakpoints, 'md')) {
+  .product .header .selections .has_child_item {
+    width: 120px;
+  }
+}
+@media (min-width: map-get($grid-breakpoints, 'md')) and (max-width: map-get($grid-breakpoints, 'lg')) {
+  .product .header h2 {
+    font-size: 20px;
+  }
+  .product .header .selections .has_child_item {
+    width: 130px;
+  }
+}
+@media screen and (max-width: map-get($grid-breakpoints, 'lg')) {
+  .product .header .selections .grid .change_grid {
+    display: none;
+  }
+}
