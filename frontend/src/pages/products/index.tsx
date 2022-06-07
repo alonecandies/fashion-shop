@@ -73,7 +73,7 @@ const Product: React.FC = () => {
   ];
 
   return (
-    <Main meta={<Meta title="Lasy Shop | Sản phẩm" description="Shop thời trang" />}>
+    <Main meta={<Meta title="HPL Shop | Sản phẩm" description="Shop thời trang" />}>
       <Breadcrumb breadcrumbs={breadcrumbs}></Breadcrumb>
       <Container className="mt-5">
         <Row>

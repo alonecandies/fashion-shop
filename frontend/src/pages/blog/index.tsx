@@ -49,7 +49,7 @@ const Blog: React.FC = () => {
     } else {
       getAllBlogs(filter);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router.query]);
 
   const pageCount = Math.ceil(total / (filter.pageSize || 6));
@@ -60,7 +60,7 @@ const Blog: React.FC = () => {
   ];
 
   return (
-    <Main meta={<Meta title="Lasy Shop | Bài viết" description="Shop thời trang" />}>
+    <Main meta={<Meta title="HPL Shop | Bài viết" description="Shop thời trang" />}>
       <Breadcrumb breadcrumbs={breadcrumbs}></Breadcrumb>
       <Container className="mt-5">
         <Row>

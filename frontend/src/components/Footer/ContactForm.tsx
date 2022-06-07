@@ -30,14 +30,14 @@ const ContactForm = () => {
               <h1>LIÊN HỆ</h1>
               <h6>
                 Hãy liên hệ với chúng tôi để phản hồi cũng như nhận được những thông tin hữu ích và
-                những chương trình khuyến mãi hấp dẫn của Lasy Shop!
+                những chương trình khuyến mãi hấp dẫn của HPL Shop!
               </h6>
               <h6>
                 Còn chần chờ gì nữa mà các bạn không liền tay chọn cho mình những set đồ thời trang
-                xinh yêu, và đóng góp vào một phần xinh đẹp cho bản thân bạn đến từ cửa hàng Lasy
+                xinh yêu, và đóng góp vào một phần xinh đẹp cho bản thân bạn đến từ cửa hàng HPL
                 Shop, là một phần giúp cho tụi mình thành công và phát triển để luôn nung nấu nhiệt
                 huyết đem đến cho các bạn những bộ quần áo xinh đẹp nhất. Chúng tôi luôn mong chờ
-                những phản hồi về dịch vụ cũng như chất lượng sản phẩm từ các bạn để phát triển Lasy
+                những phản hồi về dịch vụ cũng như chất lượng sản phẩm từ các bạn để phát triển HPL
                 Shop ngày một hoàn thiện hơn.
               </h6>
             </Col>

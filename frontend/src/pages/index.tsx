@@ -24,7 +24,7 @@ export default function Home() {
   useEffect(() => {
     if (banners && banners.length > 0) return;
     dispatch(fetchGetAllBanners({}));
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch]);
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export default function Home() {
   useEffect(() => {
     if (hotProducts && hotProducts.length > 0) return;
     getHotProducts({ type: TYPE_PRODUCT.HOT });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch]);
 
   const [newProducts, setNewProducts] = useState<Array<IProduct>>([]);
@@ -56,7 +56,7 @@ export default function Home() {
   useEffect(() => {
     if (newProducts && newProducts.length > 0) return;
     getNewProducts({ type: TYPE_PRODUCT.VIEW });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch]);
 
   const [blogs, setBlogs] = useState<Array<IBlog>>([]);
@@ -70,11 +70,11 @@ export default function Home() {
   useEffect(() => {
     if (blogs && blogs.length > 0) return;
     getBlogs({});
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <Main meta={<Meta title="Lasy Shop" description="Shop thời trang" />}>
+    <Main meta={<Meta title="HPL Shop" description="Shop thời trang" />}>
       <BannerCarousel items={mainBanners} className="main-banner"></BannerCarousel>
       <Container fluid className="sub-banner">
         <Row>
@@ -88,7 +88,7 @@ export default function Home() {
         <ProductCarousel title="Sản phẩm mới" products={newProducts}></ProductCarousel>
       </Container>
       <BannerCarousel items={footerBanners} className="footer-banner"></BannerCarousel>
-      <BlogCarousel title="Bản tin Lasy" blogs={blogs}></BlogCarousel>
+      <BlogCarousel title="Bản tin HPL" blogs={blogs}></BlogCarousel>
     </Main>
   );
 }

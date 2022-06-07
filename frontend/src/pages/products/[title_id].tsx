@@ -140,7 +140,7 @@ const ProductDetail: React.FC = () => {
   ];
 
   return (
-    <Main meta={<Meta title="Lasy Shop | Sản phẩm" description="Shop thời trang" />}>
+    <Main meta={<Meta title="HPL Shop | Sản phẩm" description="Shop thời trang" />}>
       <Breadcrumb breadcrumbs={breadcrumbs}></Breadcrumb>
       {currentProduct !== null && (
         <>

@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Link from 'next/link';
 import ContactForm from './ContactForm';
 import { ROUTES } from '@src/configs';
-import { FACEBOOK_LINK, PHONE_NUMBER } from '@src/configs/constants/contact';
+import { PHONE_NUMBER } from '@src/configs/constants/contact';
 
 const Footer = () => {
   const date = new Date();
@@ -22,23 +22,20 @@ const Footer = () => {
           <Row className="infor-wrapper">
             <Col lg={4} md={6} sm={12} xs={12}>
               <ul className="infor-main infor-item">
-                <h2 className="brand">LASY FASHION - ĐẦM THIẾT KẾ</h2>
-                <p className="address">
-                  Địa chỉ: N5 - KDT Đồng Tàu - Đ.Thịnh Liệt - P. Thịnh Liệt - Q. Hoàng Mai - TP. Hà
-                  Nội
-                </p>
+                <h2 className="brand">HPL FASHION</h2>
+                <p className="address">Địa chỉ: Đại học Bách Khoa Hà Nội</p>
                 <p className="phone">
                   Hotline: <a href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a>
                 </p>
                 <p className="email">
-                  <a href="mailto:lasyfashionshop@gmail.com">Email: lasyfashionshop@gmail.com</a>
+                  <a href="mailto:HPLfashionshop@gmail.com">Email: hplfashionshop@gmail.com</a>
                 </p>
               </ul>
             </Col>
             <Col lg={2} md={6} sm={12} xs={12}>
               <ul className="infor-item infor-intro">
                 <li>
-                  <Link href={ROUTES.blog}>Lasy&apos;s Blog</Link>
+                  <Link href={ROUTES.blog}>HPL&apos;s Blog</Link>
                 </li>
                 <li>
                   <Link href="#">Tuyển dụng</Link>
@@ -74,6 +71,22 @@ const Footer = () => {
               </ul>
             </Col>
             <Col lg={3} md={6} sm={12} xs={12}>
+              <div className="mapouter">
+                <div className="gmap_canvas">
+                  <iframe
+                    width="250"
+                    height="250"
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=%C4%91%E1%BA%A1i%20h%E1%BB%8Dc%20b%C3%A1ch%20khoa&t=k&z=17&ie=UTF8&iwloc=&output=embed"
+                    frameBorder="0"
+                    scrolling="no"
+                    marginHeight={0}
+                    marginWidth={0}
+                  ></iframe>
+                  <a href="https://www.embedgooglemap.net"></a>
+                  <style></style>
+                </div>
+              </div>
             </Col>
           </Row>
         </Container>

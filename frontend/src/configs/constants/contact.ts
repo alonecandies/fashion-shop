@@ -1,2 +1,2 @@
-export const FACEBOOK_LINK = 'https://www.facebook.com/thoitranglasy';
-export const PHONE_NUMBER = '0813708217';
+export const FACEBOOK_LINK = 'https://www.facebook.com/Mchanmanhme';
+export const PHONE_NUMBER = '0345664009';

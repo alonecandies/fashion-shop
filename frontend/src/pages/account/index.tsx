@@ -46,7 +46,7 @@ export default function Account() {
   ];
 
   return (
-    <Main meta={<Meta title="Lasy Shop | Tài khoản" description="Shop thời trang" />}>
+    <Main meta={<Meta title="HPL Shop | Tài khoản" description="Shop thời trang" />}>
       <Breadcrumb breadcrumbs={breadcrumbs}></Breadcrumb>
       <Container className="mt-5 mb-5">
         <Row className="mb-3">

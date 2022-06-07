@@ -47,7 +47,7 @@ export default function OrderPage() {
   ];
 
   return (
-    <Main meta={<Meta title="Lasy Shop | Đơn hàng" description="Shop thời trang" />}>
+    <Main meta={<Meta title="HPL Shop | Đơn hàng" description="Shop thời trang" />}>
       <Breadcrumb breadcrumbs={breadcrumbs}></Breadcrumb>
       <Container className="mt-5 mb-5">
         <Row className="mb-3">
@@ -59,8 +59,7 @@ export default function OrderPage() {
           </Col>
           <Col xs={12} md={9} className="info__divider">
             {!isFetchingUserInfo && !!userInfo && isAuth ? (
-              !isFetchingGetAllOrders &&
-              !!orders && <OrderList orders={orders} />
+              !isFetchingGetAllOrders && !!orders && <OrderList orders={orders} />
             ) : (
               <NotLoggedIn />
             )}

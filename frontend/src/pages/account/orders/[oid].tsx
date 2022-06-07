@@ -40,7 +40,7 @@ export default function Order() {
   ];
 
   return (
-    <Main meta={<Meta title="Lasy Shop | Đơn hàng" description="Shop thời trang" />}>
+    <Main meta={<Meta title="HPL Shop | Đơn hàng" description="Shop thời trang" />}>
       <Breadcrumb breadcrumbs={breadcrumbs}></Breadcrumb>
       <Container className="mt-5 mb-5">
         <Row className="mb-3">

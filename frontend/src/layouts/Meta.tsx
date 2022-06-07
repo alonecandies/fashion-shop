@@ -24,17 +24,17 @@ const Meta = (props: IMetaProps) => {
           rel="icon"
           type="image/x-icon"
           sizes="32x32"
-          href={`${router.basePath}/lasy_logo.png`}
+          href={`${router.basePath}/logo.jpg`}
           key="icon32"
         />
         <link
           rel="icon"
           type="image/x-icon"
           sizes="16x16"
-          href={`${router.basePath}/lasy_logo.png`}
+          href={`${router.basePath}/logo.jpg`}
           key="icon16"
         />
-        <link rel="icon" href={`${router.basePath}/lasy_logo.png`} key="favicon" />
+        <link rel="icon" href={`${router.basePath}/logo.jpg`} key="favicon" />
       </Head>
       <NextSeo
         title={props.title}

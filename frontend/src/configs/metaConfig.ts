@@ -1,6 +1,6 @@
 export const metaConfig = {
-  site_name: 'Lasy Shop',
-  title: 'Lasy Shop',
+  site_name: 'HPL Shop',
+  title: 'HPL Shop',
   description: 'Shop thời trang',
   locale: 'vi'
 };

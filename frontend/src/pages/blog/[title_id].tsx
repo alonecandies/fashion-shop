@@ -64,7 +64,7 @@ const BlogDetail: React.FC = () => {
   ];
 
   return (
-    <Main meta={<Meta title="Lasy Shop | Bài viết" description="Shop thời trang" />}>
+    <Main meta={<Meta title="HPL Shop | Bài viết" description="Shop thời trang" />}>
       <Breadcrumb breadcrumbs={breadcrumbs}></Breadcrumb>
       {!!blog && (
         <>

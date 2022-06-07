@@ -21,7 +21,7 @@ export default function LoginPage() {
   ];
 
   return (
-    <Main meta={<Meta title="Lasy Shop | Đăng nhập" description="Shop thời trang" />}>
+    <Main meta={<Meta title="HPL Shop | Đăng nhập" description="Shop thời trang" />}>
       <Breadcrumb breadcrumbs={breadcrumbs}></Breadcrumb>
       <Container className="mt-5 mb-5">
         <Row className="d-flex justify-content-center">

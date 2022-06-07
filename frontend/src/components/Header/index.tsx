@@ -68,7 +68,7 @@ const Header = () => {
   useEffect(() => {
     if (categories && categories.length > 0) return;
     dispatch(fetchGetAllCategories({}));
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch]);
 
   const totalOrders = useAppSelector((state) => state.order.totalLocalCart);
@@ -103,7 +103,7 @@ const Header = () => {
         <Navbar expand="lg" className="menu navibar">
           <Link href={ROUTES.home} passHref>
             <Navbar.Brand className="navibar-brand">
-              <Image src={logoImg} alt="Lasy shop logo"></Image>
+              <Image src={logoImg} alt="HPL shop logo"></Image>
             </Navbar.Brand>
           </Link>
           <Nav as="ul" className="navibar-nav normal">
