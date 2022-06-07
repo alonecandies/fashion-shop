@@ -40,7 +40,7 @@ const BlogCategory = () => {
   return (
     <>
       <Helmet>
-        <title>Blog - Danh mục | Lasy Shop</title>
+        <title>Blog - Danh mục | HPL Shop</title>
       </Helmet>
 
       <BlogCategoryDialog

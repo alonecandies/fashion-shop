@@ -37,7 +37,7 @@ const ProductCategory = () => {
   return (
     <>
       <Helmet>
-        <title>Sản phẩm - Danh mục | Lasy Shop</title>
+        <title>Sản phẩm - Danh mục | HPL Shop</title>
       </Helmet>
 
       <CategoryDialog

@@ -40,7 +40,7 @@ const ProductTag = () => {
   return (
     <>
       <Helmet>
-        <title>Sản phẩm - Tag | Lasy Shop</title>
+        <title>Sản phẩm - Tag | HPL Shop</title>
       </Helmet>
 
       <ProductTagDialog

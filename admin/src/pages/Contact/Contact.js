@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchGetAllContacts, selectContactsData, selectTotalContact } from 'src/features/contact/contactSlice';
+import {
+  fetchGetAllContacts,
+  selectContactsData,
+  selectTotalContact
+} from 'src/features/contact/contactSlice';
 import { useNavigate } from 'react-router-dom';
 import useCheckAuth from 'src/hooks/useCheckAuth';
 import { Box, Container, Skeleton } from '@material-ui/core';
@@ -20,7 +24,9 @@ const Contact = () => {
   // redux state
   const contacts = useSelector(selectContactsData);
   const total = useSelector(selectTotalContact);
-  const isFetchingGetAllContacts = useSelector((state) => state.contactSlice.isFetchingGetAllContacts);
+  const isFetchingGetAllContacts = useSelector(
+    (state) => state.contactSlice.isFetchingGetAllContacts
+  );
   // pagination
   const [pagination, setPagination] = useState({
     page: 0,
@@ -49,7 +55,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Liên hệ | Lasy Shop</title>
+        <title>Liên hệ | HPL Shop</title>
       </Helmet>
       <Box
         sx={{
@@ -61,10 +67,10 @@ const Contact = () => {
         <Container maxWidth={false}>
           <ContactToolbar setPagination={setPagination} />
           <ContactDetailDialog
-              isOpened={openDialog}
-              idContact={idContactEdit}
-              handleClose={handleCloseDialog}
-            />
+            isOpened={openDialog}
+            idContact={idContactEdit}
+            handleClose={handleCloseDialog}
+          />
           <Box sx={{ pt: 3 }}>
             {isFetchingGetAllContacts ? (
               <Skeleton variant="rectangular" width="100%" height={600} />

@@ -19,7 +19,7 @@ const Dashboard = () => {
   return (
     <>
       <Helmet>
-        <title>Dashboard | Lasy Shop</title>
+        <title>Dashboard | HPL Shop</title>
       </Helmet>
       <Box
         sx={{

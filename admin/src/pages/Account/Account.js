@@ -18,7 +18,7 @@ const Account = () => {
   return (
     <>
       <Helmet>
-        <title>Tài khoản | Lasy Shop</title>
+        <title>Tài khoản | HPL Shop</title>
       </Helmet>
       <Box
         sx={{

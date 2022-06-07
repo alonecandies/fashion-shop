@@ -43,7 +43,7 @@ const Login = () => {
   return (
     <>
       <Helmet>
-        <title>Đăng nhập | Lasy shop</title>
+        <title>Đăng nhập | HPL shop</title>
       </Helmet>
       <Box
         sx={{

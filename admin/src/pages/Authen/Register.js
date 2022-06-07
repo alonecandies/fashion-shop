@@ -39,7 +39,7 @@ const Register = () => {
   return (
     <>
       <Helmet>
-        <title>Đăng ký | Lasy Shop</title>
+        <title>Đăng ký | HPL Shop</title>
       </Helmet>
       <Box
         sx={{

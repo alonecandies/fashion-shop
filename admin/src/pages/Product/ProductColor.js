@@ -44,7 +44,7 @@ const ProductColor = () => {
   return (
     <>
       <Helmet>
-        <title>Sản phẩm - Màu sắc | Lasy Shop</title>
+        <title>Sản phẩm - Màu sắc | HPL Shop</title>
       </Helmet>
 
       <ProductColorDialog

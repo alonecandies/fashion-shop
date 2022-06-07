@@ -52,7 +52,7 @@ const Cart = () => {
   return (
     <>
       <Helmet>
-        <title>Đơn hàng | Lasy Shop</title>
+        <title>Đơn hàng | HPL Shop</title>
       </Helmet>
       <Box
         sx={{

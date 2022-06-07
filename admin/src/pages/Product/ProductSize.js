@@ -44,7 +44,7 @@ const ProductSize = () => {
   return (
     <>
       <Helmet>
-        <title>Sản phẩm - Kích cỡ | Lasy Shop</title>
+        <title>Sản phẩm - Kích cỡ | HPL Shop</title>
       </Helmet>
 
       <ProductSizeDialog

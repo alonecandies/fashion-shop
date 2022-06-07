@@ -74,7 +74,7 @@ const BannerList = () => {
   return (
     <>
       <Helmet>
-        <title>Banner | Lasy Shop</title>
+        <title>Banner | HPL Shop</title>
       </Helmet>
       <Box
         sx={{

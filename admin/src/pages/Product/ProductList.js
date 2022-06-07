@@ -95,7 +95,7 @@ const ProductList = () => {
   return (
     <>
       <Helmet>
-        <title>Sản phẩm - Danh sách | Lasy Shop</title>
+        <title>Sản phẩm - Danh sách | HPL Shop</title>
       </Helmet>
 
       <CreateProductDialog

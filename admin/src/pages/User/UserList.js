@@ -91,7 +91,7 @@ const UserList = () => {
   return (
     <>
       <Helmet>
-        <title>Người dùng | Lasy Shop</title>
+        <title>Người dùng | HPL Shop</title>
       </Helmet>
       <Box
         sx={{

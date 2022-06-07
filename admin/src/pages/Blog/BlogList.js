@@ -84,7 +84,7 @@ const BlogList = () => {
   return (
     <>
       <Helmet>
-        <title>Blog | Lasy Shop</title>
+        <title>Blog | HPL Shop</title>
       </Helmet>
       <Box
         sx={{

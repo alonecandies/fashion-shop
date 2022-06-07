@@ -11,7 +11,7 @@ const ProductImage = () => {
   return (
     <>
       <Helmet>
-        <title>Sản phẩm - Hình ảnh | Lasy Shop</title>
+        <title>Sản phẩm - Hình ảnh | HPL Shop</title>
       </Helmet>
       <Box
         sx={{
