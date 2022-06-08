@@ -22,6 +22,7 @@ ReactDOM.render(
           pauseOnFocusLoss
           draggable
           pauseOnHover
+          limit={1}
         />
         <App />
       </ErrorBoundary>

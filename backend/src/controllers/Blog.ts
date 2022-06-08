@@ -64,7 +64,7 @@ export default class BlogController {
     }
   }
 
-  public async updatBlog(req: Request, res: Response, next: NextFunction) {
+  public async updateBlog(req: Request, res: Response, next: NextFunction) {
     try {
       const blog = req.body;
       const blogService = new BlogService();
